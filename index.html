@@ -1123,12 +1123,12 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
         var currentSrc = jQuery(".wp-image-11").attr("src");
         
         // Check if the current src attribute matches the desired pattern
-        if (currentSrc.includes("blaze3rd.github.io/wp-content/uploads")) {
+        if (currentSrc.includes("https://blaze3rd.github.io/wp-content/uploads")) {
             // Replace the part of the URL that needs to be changed
-            var newSrc = currentSrc.replace("blaze3rd.github.io/wp-content/uploads", "blaze3rd.github.io/portfolio/wp-content/uploads");
+            var newSrc = currentSrc.replace("https://blaze3rd.github.io/wp-content/uploads", "https://blaze3rd.github.io/portfolio/wp-content/uploads");
             
             // Set the new src attribute
-            jQuery("wp-image-11").attr("src", newSrc);
+            jQuery(".wp-image-11").attr("src", newSrc);
         } else {
             // Handle the case where the current URL doesn't match the expected pattern
             console.log("URL pattern doesn't match");
